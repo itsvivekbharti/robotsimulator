@@ -1,0 +1,81 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RobotSimulator",
+		"_postman_id": "557aba68-0034-559b-0848-68184a379be1",
+		"description": "It contains all the requests for the Robot simulator application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PLACE",
+			"request": {
+				"url": "http://localhost:8080/command",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "PLACE 1,1,EAST"
+				},
+				"description": "Request body should be as below:\nPLACE 1,1,EAST"
+			},
+			"response": []
+		},
+		{
+			"name": "MOVE",
+			"request": {
+				"url": "http://localhost:8080/command",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "MOVE"
+				},
+				"description": "Request body should be as below:\nMOVE"
+			},
+			"response": []
+		},
+		{
+			"name": "LEFT",
+			"request": {
+				"url": "http://localhost:8080/command",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "LEFT"
+				},
+				"description": "Request body should be as below:\nLEFT"
+			},
+			"response": []
+		},
+		{
+			"name": "RIGHT",
+			"request": {
+				"url": "http://localhost:8080/command",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "RIGHT"
+				},
+				"description": "Request body should be as below:\nRIGHT"
+			},
+			"response": []
+		},
+		{
+			"name": "REPORT",
+			"request": {
+				"url": "http://localhost:8080/command",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "REPORT"
+				},
+				"description": "Request body should be as below:\nREPORT"
+			},
+			"response": []
+		}
+	]
+}

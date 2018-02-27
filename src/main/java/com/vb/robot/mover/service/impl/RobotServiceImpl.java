@@ -1,7 +1,7 @@
 package com.vb.robot.mover.service.impl;
 
 import org.springframework.stereotype.Service;
-
+import javax.annotation.PostConstruct;
 import com.vb.robot.mover.exception.RobotException;
 import com.vb.robot.mover.model.Command;
 import com.vb.robot.mover.model.Direction;
@@ -11,6 +11,11 @@ import com.vb.robot.mover.service.RobotService;
 
 @Service
 public class RobotServiceImpl implements RobotService{
+
+@PostConstruct
+	public void init() {
+	    System.out.println("service from @service");
+	}
 
     /**
      * Evaluates and executes a command provided.
